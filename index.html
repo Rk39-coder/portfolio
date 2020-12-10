@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="icon" href="rk-logo1.png" type="image/x-icon">
+    <link rel="icon" href="img/rk-logo1.png" type="image/x-icon">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+(function() {
+emailjs.init("user_OjY5SpVa2GUxKO0XiKzAN");
+})();
+</script>
+
+<script>
+    function sendmail() {
+        var templateParams = {
+        to_name: "Rudresh",
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        desc: document.getElementById("desc").value,
+        };
+        
+        emailjs.send('service_941ejxdsn', 'contact_nd3aig6', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
+        
+    }
+    
+</script>
     <title>RK's Portfolio</title>
 </head>
 <body>
@@ -76,7 +103,7 @@
             <i class='fas fa-envelope my-auto' style="color: red; font-size: 30px; "></i>
             <div class="info">
               <div class="head">Email</div>
-              <div class="sub">developer.rk.39@gmail.com</div>
+              <div class="sub"><a href="mailto:developer.rk.39@gmail.com" style="text-decoration: none; color: black;">developer.rk.39@gmail.com</a></div>
             </div>
           </div>
         </div>
@@ -133,7 +160,7 @@
       <div class="col-md-6 p-5 text-center m-auto" style="color: #6e6e6e; ">
         <h2 >Always Ready To Learn</h2>
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi labore magni nesciunt, libero velit. Molestias tenetur ea minima hic ullam deserunt pariatur quas eum quia tempora. Sequi, repellat possimus error molestias aliquid, quae molestiae dignissimos porro quasi voluptas non.</p>
-        <button class="btn my-2 "><a href="#" class="download-btn"><span>DOWNLOAD RESUME</span></a></button>
+        <a href="img/RudreshKumar_InternshalaResume.pdf"  download target="_blank" class="download-btn" ><span class="my-2">DOWNLOAD RESUME</span></a>
       </div>
     </div>
   </div>
@@ -202,8 +229,8 @@
                 <div class="media">
                   <div class="media-body ml-3">
                     <blockquote class="blockquote border-0 p-0">
-                      <p class="font-italic text-white"> <i class="fa fa-quote-left mr-3 " style="color: red;"></i>Never underestimate the determination of a kid who is time-rich and cash-poor.</p>
-                      <footer class="blockquote-footer text-white"> <b>Cory Doctorow</b>
+                      <p class="font-italic text-white"> <i class="fa fa-quote-left mr-3 " style="color: red;"></i>No Review Yet</p>
+                      <footer class="blockquote-footer text-white"><b>Rudresh</b>
                     </footer>
                     </blockquote>
                   </div>
@@ -244,25 +271,25 @@
     <div class="row ">
     <div class="col">
       <h4 class="form-text text-center my-3">Message Me</h4>
-      <div class="form col-md-4 mx-auto my-2" >
-        <form>
+      <div class="form col-md-4 mx-auto my-2" id="contact-form">
+        <form action="javascript:sendmail();" method="post">
           <div class="form-group">
-            <label for="name"></label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              <label for="name"></label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
           </div>
           <div class="form-group">
-            <label for="email"></label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              <label for="email"></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email">
           </div>
           <div class="form-group">
-            <label for="desc"></label>
-            <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Describe Your Requirement"></textarea>
+              <label for="desc"></label>
+              <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Describe Your Requirement"></textarea>
           </div>
-        
+          
           <div class="col text-center">
-            <button type="submit" class="btn btn-primary ">Leave A Message</button>
+              <button type="reset" class="btn btn-primary" onclick="sendmail()" >Leave A Message</button>
           </div> 
-        </form>
+      </form>
       </div>
     </div>
   </div>
@@ -274,7 +301,8 @@
 <!-- Footer starts here -->
 <footer style="background-color: #000; height: auto; width: 100%;">
   <div class="container text-center p-2" style="color: #6e6e6e;">
-    <small> Copyright &copy; 2020 | RK</small>
+    <small> Copyright &copy; 2020 | 
+    <a href="mailto:developer.rk.39@gmail.com" style="text-decoration: none; color: #6e6e6e;">RK</a></small>
   </div>
 </footer>
 
