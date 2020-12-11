@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Arial, Helvetica, sans-serif;
+    
 }
+
 
 html{
     scroll-behavior: smooth;
+    /* letter-spacing: 1px; */
 }
+
+
 
 
 /* NAVBAR STYLING STARTS HERE*/
@@ -19,6 +25,7 @@ html{
     cursor: pointer;
     text-align: center;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
 }
 
 .shine:hover{
@@ -32,6 +39,8 @@ html{
     font-weight: 600;
     padding: 10px;
     font-size: 18px;
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .nav-item a:hover{
@@ -57,12 +66,24 @@ html{
 .about .atitle{
     font-weight: 600;
     color: #6e6e6e;
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .about .atext{
     font-weight: 600;
     color: red;
+    font-family: 'Aldrich', sans-serif;
+
     
+}
+
+.about h2{
+    font-family: 'Aldrich', sans-serif;
+}
+
+.about p{
+    font-family: 'Itim', cursive;
 }
 
 .about .info{
@@ -72,14 +93,14 @@ html{
 .about .head{
     font-weight: 600;
     color: #6e6e6e;
+    font-family: 'Aldrich', sans-serif;
+
 }
 
-.about .form-text{
-    font-weight: 600;
-    color: #6e6e6e;
-    font-size: 25px;
-    text-align: center;
+.about .sub{
+    font-family: 'Itim', cursive;
 }
+
 
 .fa-user:before {
     content: "\f007";
@@ -98,16 +119,38 @@ html{
 .skills .stitle{
     color: #6e6e6e;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .skills .stext{
     color: red;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
+
+}
+
+.skills h2{
+    font-family: 'Aldrich', sans-serif;
+}
+
+.skills .progress-n{
+    display: inline-block;
+    font-family: 'Itim', cursive;
+    
+}
+
+.skills .progress-p{
+    display: block;
+    float: right;
+    font-family: 'Itim', cursive;
+    
 }
 
 .skills p{
     color: #6e6e6e;
     margin-bottom: 0px;
+    font-family: 'Itim', cursive;
 }
 
 .skills .download-btn span {
@@ -116,6 +159,8 @@ html{
     position: relative;
     transition: 0.5s;
     color: #6e6e6e;
+    font-family: 'Itim', cursive;
+    
 }
   
 .skills .download-btn span:after {
@@ -144,7 +189,8 @@ html{
 /* TOOL STYLING STARTS HERE*/
 
 .tool .t-title{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Aldrich', sans-serif;
+
     font-weight: 600;
     color: #6e6e6e;
 }
@@ -152,6 +198,8 @@ html{
 .tool .t-text{
     color: red;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .tool .t-img:hover{
@@ -161,6 +209,7 @@ html{
 .tool .r-text{
     font-weight: 600;
     color: #6e6e6e;
+    font-family: 'Itim', cursive;
 }
 
 .tool .r-text:hover{
@@ -175,11 +224,15 @@ html{
 .review .r-title{
     color: #6e6e6e; 
     font-weight: 600; 
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .review .r-text{
     color: red;
     font-weight: 600; 
+    font-family: 'Aldrich', sans-serif;
+
 }
 
 .review .text-lg {
@@ -203,26 +256,33 @@ html{
 .contact .c-title{
     color: #6e6e6e;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
+
 }
   
 .contact .c-text{
     color: red;
     font-weight: 600;
+    font-family: 'Aldrich', sans-serif;
+
 }
   
 .contact .form-text{
     font-weight: 600;
     color: #6e6e6e;
+    font-family: 'Itim', cursive;
 } 
   
 .contact .form input::placeholder {
     color: #6e6e6e;
     opacity: 0.8;
+    font-family: 'Itim', cursive;
 }
   
 .contact .form textarea::placeholder {
     color: #6e6e6e;
     opacity: 0.8;
+    font-family: 'Itim', cursive;
 }
   
 /* CONTACT STYLING ENDS HERE*/
