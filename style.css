@@ -14,7 +14,9 @@ html{
 }
 
 
-
+#alert_error {
+margin: 0;
+}
 
 /* NAVBAR STYLING STARTS HERE*/
 
@@ -102,9 +104,7 @@ html{
 }
 
 
-.fa-user:before {
-    content: "\f007";
-}
+
 .fa-map-marker-alt:before {
     content: "\f007";
 }
